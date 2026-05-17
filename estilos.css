@@ -1,0 +1,64 @@
+/* Configuración General del Sitio */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Color Negro Puro para Navbar requerido por el Mockup */
+.bg-black {
+    background-color: #000000 !important;
+}
+
+/* Enlaces del Sitio - Elimina colores por defecto */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Estilo Tipográfico de Enlaces en el Mockup (Negrita, Cursiva y Subrayado) */
+.enlace-mockup {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000000;
+}
+
+.enlace-mockup:hover {
+    color: #333333;
+}
+
+/* Título de Marca Central */
+.titulo-central {
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+
+/* Contenedor Rectangular Gris para Sincronizar Imágenes */
+.contenedor-imagen-mockup {
+    background-color: #ededed; /* Color gris claro de fondo de los cuadros */
+    padding: 15px;
+    border-radius: 2px;
+    height: 220px; /* Altura fija para mantener simetría en la grilla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Comportamiento de las Imágenes de Producto */
+.contenedor-imagen-mockup img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Evita distorsiones y conserva proporciones */
+}
+
+/* Ajustes Responsivos Básicos */
+@media (max-width: 768px) {
+    .contenedor-imagen-mockup {
+        height: 200px;
+    }
+    .titulo-central {
+        font-size: 1.8rem;
+    }
+}
