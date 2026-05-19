@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yornado Sport - Mi Cuenta</title>
+
+    <link rel="icon" type="image/png" href="../img/y7.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/y7.png" alt="Y7 Logo" height="35" class="me-2">
+                <span class="fw-bold tracking-wider fs-5">YORNALDO SPORT</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarYornaldo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarYornaldo">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link text-white" href="mujer.html">Mujer</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="hombre.html">Hombre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="ninos.html">Niños</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Deporte</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="descuentos.html">Descuentos</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+                <div class="input-group d-none d-md-flex" style="width: 180px;">
+                    <input type="text" class="form-control form-control-sm bg-white text-dark border-end-0" placeholder="Buscar">
+                    <span class="input-group-text bg-white text-dark border-start-0"><i class="bi bi-search"></i></span>
+                </div>
+                <a href="carrito.html" class="text-white fs-4"><i class="bi bi-cart3"></i></a>
+                <a href="favoritos.html" class="text-white fs-4"><i class="bi bi-heart"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-person-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="card border-0 bg-light p-3 text-center">
+                    <div class="mx-auto my-3 bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                        <i class="bi bi-person display-4"></i>
+                    </div>
+                    <h5 class="fw-bold m-0">Rodrigo Alvites</h5>
+                    <p class="text-muted small mb-3">Cliente Estándar</p>
+                    <hr>
+                    <div class="nav flex-column nav-pills text-start gap-2">
+                        <button class="nav-link active btn-sm rounded-0 bg-dark text-white border-0" data-bs-toggle="pill" data-bs-target="#datos">
+                            <i class="bi bi-person-vcard me-2"></i> Mis Datos
+                        </button>
+                        <button class="nav-link btn-sm rounded-0 text-dark text-start" data-bs-toggle="pill" data-bs-target="#pedidos">
+                            <i class="bi bi-box-seam me-2"></i> Mis Pedidos
+                        </button>
+                        <a href="index.html" class="nav-link btn-sm rounded-0 text-danger text-start mt-3 border-top pt-3">
+                            <i class="bi bi-box-arrow-left me-2"></i> Cerrar Sesión
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="tab-content" id="tabContenidoUsuario">
+                    
+                    <div class="tab-pane fade show active" id="datos">
+                        <h3 class="fst-italic fw-bold text-dark text-uppercase mb-4">Información de la Cuenta</h3>
+                        <form class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <label class="form-label small fw-bold text-uppercase text-muted">Nombres</label>
+                                <input type="text" class="form-control rounded-0" value="Rodrigo Miguel">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label class="form-label small fw-bold text-uppercase text-muted">Apellidos</label>
+                                <input type="text" class="form-control rounded-0" value="Alvites Aguilar">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small fw-bold text-uppercase text-muted">Correo Electrónico</label>
+                                <input type="email" class="form-control rounded-0" value="rodrigo.alvites@email.com" disabled>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label class="form-label small fw-bold text-uppercase text-muted">Teléfono</label>
+                                <input type="tel" class="form-control rounded-0" value="999999999">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <label class="form-label small fw-bold text-uppercase text-muted">Dirección de Entrega</label>
+                                <input type="text" class="form-control rounded-0" value="Av. Universitaria 1234">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="button" class="btn btn-dark rounded-0 fw-bold px-4 text-uppercase">Actualizar Datos</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="pedidos">
+                        <h3 class="fst-italic fw-bold text-dark text-uppercase mb-4">Historial de Pedidos</h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle border-top">
+                                <thead class="table-light text-uppercase small">
+                                    <tr>
+                                        <th>Pedido</th>
+                                        <th>Fecha</th>
+                                        <th>Total</th>
+                                        <th>Estado</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">#YS-1092</td>
+                                        <td>12/04/2026</td>
+                                        <td>S/ 45.00</td>
+                                        <td><span class="badge bg-success rounded-0 text-uppercase">Entregado</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-link btn-sm text-dark p-0 small fw-bold text-decoration-underline border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPedido1092">
+                                                Detalles
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">#YS-1054</td>
+                                        <td>28/03/2026</td>
+                                        <td>S/ 115.00</td>
+                                        <td><span class="badge bg-success rounded-0 text-uppercase">Entregado</span></td>
+                                        <td>
+
+                                            <button type="button" class="btn btn-link btn-sm text-dark p-0 small fw-bold text-decoration-underline border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalPedido1054">
+                                                Detalles
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="modal fade" id="modalPedido1092" tabindex="-1" aria-labelledby="modalPedidoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 border-0 shadow">
+            
+            <div class="modal-header bg-black text-white rounded-0">
+                <h5 class="modal-title fw-bold text-uppercase small" id="modalPedidoLabel">Resumen de Pedido #YS-1092</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            
+            <div class="modal-body p-4">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="text-muted small">Fecha: 12/04/2026</span>
+                    <span class="text-muted small">Método: Tarjeta</span>
+                </div>
+                
+                <h6 class="fw-bold text-uppercase small border-bottom pb-2">Artículos</h6>
+                
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-1 me-2" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <img src="../img/bolso_deportivoy7.png" alt="Producto" class="img-fluid" style="max-height: 100%;">
+                        </div>
+                        <div>
+                            <p class="m-0 fw-bold small">Bolso Deportivo XTREME GEAR</p>
+                            <p class="m-0 text-muted small">Cantidad: 1</p>
+                        </div>
+                    </div>
+                    <span class="fw-bold small">S/ 45.00</span>
+                </div>
+                
+                <hr>
+                
+                <div class="d-flex justify-content-between mb-1 small">
+                    <span>Subtotal:</span>
+                    <span>S/ 45.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3 small">
+                    <span>Envío:</span>
+                    <span class="text-success text-uppercase fw-bold">Gratis</span>
+                </div>
+                <div class="d-flex justify-content-between border-top pt-2">
+                    <span class="fw-bold text-uppercase small">Total Pagado:</span>
+                    <span class="fw-bold text-danger fs-5">S/ 45.00</span>
+                </div>
+                
+                <div class="mt-4 bg-light p-3 small text-muted border border-light">
+                    <p class="m-0 mb-1"><strong>Dirección de entrega:</strong> Av. Universitaria 1234, Lima</p>
+                    <p class="m-0"><strong>Estado de entrega:</strong> Recibido por Rodrigo Alvites</p>
+                </div>
+            </div>
+            
+            <div class="modal-footer border-0 bg-light">
+                <button type="button" class="btn btn-secondary btn-sm rounded-0 text-uppercase fw-bold px-3" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalPedido1054" tabindex="-1" aria-labelledby="modalPedido1054Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 border-0 shadow">
+            
+            <div class="modal-header bg-black text-white rounded-0">
+                <h5 class="modal-title fw-bold text-uppercase small" id="modalPedido1054Label">Resumen de Pedido #YS-1054</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            
+            <div class="modal-body p-4">
+                <div class="d-flex justify-content-between mb-3">
+                    <span class="text-muted small">Fecha: 28/03/2026</span>
+                    <span class="text-muted small">Método: Pago en Efectivo</span>
+                </div>
+                
+                <h6 class="fw-bold text-uppercase small border-bottom pb-2">Artículos</h6>
+                
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-1 me-2" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <img src="../img/pantalonescalentadoresy7.png" alt="Pantalones Calentadores" class="img-fluid" style="max-height: 100%;">
+                        </div>
+                        <div>
+                            <p class="m-0 fw-bold small">Pantalones Calentadores Y7</p>
+                            <p class="m-0 text-muted small">Cantidad: 1</p>
+                        </div>
+                    </div>
+                    <span class="fw-bold small">S/ 80.00</span>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-light p-1 me-2" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                            <img src="../img/camisetas_deportivasy7.png" alt="Camiseta Deportiva" class="img-fluid" style="max-height: 100%;">
+                        </div>
+                        <div>
+                            <p class="m-0 fw-bold small">Camiseta Deportiva Running</p>
+                            <p class="m-0 text-muted small">Cantidad: 1</p>
+                        </div>
+                    </div>
+                    <span class="fw-bold small">S/ 35.00</span>
+                </div>
+                
+                <hr>
+                
+                <div class="d-flex justify-content-between mb-1 small">
+                    <span>Subtotal:</span>
+                    <span>S/ 115.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3 small">
+                    <span>Envío:</span>
+                    <span class="text-success text-uppercase fw-bold">Gratis</span>
+                </div>
+                <div class="d-flex justify-content-between border-top pt-2">
+                    <span class="fw-bold text-uppercase small">Total Pagado:</span>
+                    <span class="fw-bold text-danger fs-5">S/ 115.00</span>
+                </div>
+                
+                <div class="mt-4 bg-light p-3 small text-muted border border-light">
+                    <p class="m-0 mb-1"><strong>Dirección de entrega:</strong> Av. Universitaria 1234, Lima</p>
+                    <p class="m-0"><strong>Estado de entrega:</strong> Recibido por Rodrigo Alvites</p>
+                </div>
+            </div>
+            
+            <div class="modal-footer border-0 bg-light">
+                <button type="button" class="btn btn-secondary btn-sm rounded-0 text-uppercase fw-bold px-3" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>-->
